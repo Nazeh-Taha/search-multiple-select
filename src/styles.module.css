@@ -1,9 +1,60 @@
-/* add css module styles here (optional) */
+.container {
+  background-color: #fff;
+  width: 300px;
+  box-shadow: 3px 3px 8px 2px rgba(0, 0, 0, 0.11);
+  font-size: 0.8rem;
+  font-weight: 700;
+  border-radius: 5px;
+  padding: 30px;
+}
 
-.test {
-  margin: 2em;
-  padding: 0.5em;
-  border: 2px solid #000;
-  font-size: 2em;
-  text-align: center;
+.container input {
+  padding-bottom: 30px;
+  width: 100%;
+  border: 0;
+  box-sizing: border-box;
+  min-width: 150px;
+  font-size: 20px;
+  font-weight: 500;
+  outline: none;
+  border-bottom: 2px solid #807f7f66;
+}
+
+.container input::placeholder {
+  font-size: 22px;
+  color: #807f7f;
+  font-weight: 500;
+}
+
+.optionsContainer {
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.optionContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 20px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.optionContainer:hover{
+  color: #5abdaf;
+}
+
+.optionContainer p {
+  font-size: 20px;
+  font-weight: 500;
+  padding-right: 15px;
+  margin: 0;
+  width: 100%;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.optionContainer div {
+  font-size: 22px;
+  font-weight: 600;
+
 }

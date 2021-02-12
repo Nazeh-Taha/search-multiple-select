@@ -4,7 +4,7 @@ import { ExampleComponent } from 'search-multiple-select'
 import 'search-multiple-select/dist/index.css'
 
 const App = () => {
-  return <ExampleComponent text="Create React Library Example 😄" />
+  return <ExampleComponent options={['']} getOptionsData={() => {}}/>
 }
 
 export default App

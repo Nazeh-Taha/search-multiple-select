@@ -9,6 +9,8 @@
 ```bash
 npm install --save search-multiple-select
 ```
+## Desktop Demo:
+![Demo](https://s2.gifyu.com/images/select.png)
 
 ## Usage
 
@@ -19,11 +21,24 @@ import MyComponent from 'search-multiple-select'
 import 'search-multiple-select/dist/index.css'
 
 class Example extends Component {
+// the callback. Use a better name
+   const getOptionsData = (data) => { 
+    console.log(data); // print option data - to test
+  };
+
   render() {
-    return <MyComponent />
+    return <MyComponent options={['']} getOptionsData={getOptionsData}/>
   }
 }
 ```
+
+## Props
+
+| Property       | Type     | Default    | Description                       |
+| :-------       | :-----   | :--------  | :---------------------------      |
+| `options`      | Array    | ['']       | Array of string - Options to show |
+|`getOptionsData`| Function | () => {}   | return option data                |
+
 
 ## License
 
