@@ -1,10 +1,10 @@
 import React from 'react'
 
-import { ExampleComponent } from 'search-multiple-select'
+import { MultipleSelect } from 'search-multiple-select'
 import 'search-multiple-select/dist/index.css'
 
 const App = () => {
-  return <ExampleComponent options={['']} getOptionsData={() => {}}/>
+  return <MultipleSelect options={['']} getOptionsData={() => {}}/>
 }
 
 export default App

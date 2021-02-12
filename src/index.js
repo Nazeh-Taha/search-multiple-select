@@ -3,7 +3,7 @@ import styles from './styles.module.css'
 import { MultipleSelectReducer } from './state/reducer';
 
 
-export const ExampleComponent = ({ options = [''], getOptionsData = () => { } }) => {
+export const MultipleSelect = ({ options = [''], getOptionsData = () => { } }) => {
 
   const [state, dispatch] = MultipleSelectReducer();
 

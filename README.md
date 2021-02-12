@@ -17,7 +17,7 @@ npm install --save search-multiple-select
 ```jsx
 import React, { Component } from 'react'
 
-import MyComponent from 'search-multiple-select'
+import MultipleSelect from 'search-multiple-select'
 import 'search-multiple-select/dist/index.css'
 
 class Example extends Component {
@@ -27,7 +27,7 @@ class Example extends Component {
   };
 
   render() {
-    return <MyComponent options={['']} getOptionsData={getOptionsData}/>
+    return <MultipleSelect options={['']} getOptionsData={getOptionsData}/>
   }
 }
 ```
